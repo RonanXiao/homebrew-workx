@@ -21,6 +21,8 @@ class Workx < Formula
     ENV["WORKX_REPO_ROOT"] = buildpath.to_s
     ENV["OPENSSL_DIR"] = formula_opt_prefix("openssl@3")
     ENV.prepend_path "PKG_CONFIG_PATH", formula_opt_lib("openssl@3")/"pkgconfig"
+    ENV["CARGO_NET_GIT_FETCH_WITH_CLI"] = "true"
+    ENV["CARGO_HTTP_MULTIPLEXING"] = "false"
 
     target = Hardware::CPU.arm? ? "aarch64-apple-darwin" : "x86_64-apple-darwin"
 
