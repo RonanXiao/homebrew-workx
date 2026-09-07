@@ -23,6 +23,8 @@ class Workx < Formula
     ENV.prepend_path "PKG_CONFIG_PATH", formula_opt_lib("openssl@3")/"pkgconfig"
     ENV["CARGO_NET_GIT_FETCH_WITH_CLI"] = "true"
     ENV["CARGO_HTTP_MULTIPLEXING"] = "false"
+    ENV["CARGO_TERM_PROGRESS"] = "always"
+    ENV["CARGO_TERM_COLOR"] = "always"
 
     target = Hardware::CPU.arm? ? "aarch64-apple-darwin" : "x86_64-apple-darwin"
 
