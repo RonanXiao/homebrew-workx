@@ -6,10 +6,10 @@ class Workx < Formula
 
   if Hardware::CPU.arm?
     url "https://github.com/RonanXiao/workx/releases/download/rust-v0.0.2/workx-package-aarch64-apple-darwin.tar.gz"
-    sha256 "f90baa15d3978901574cdf63c30c019b45654d388b00ed2846b87d62ae9578c7"
+    sha256 "5a8960f40ed7c42fc57c63456a1877dae812b7a9d7a766667c886b7a9cf1e727"
   else
     url "https://github.com/RonanXiao/workx/archive/refs/tags/rust-v0.0.2.tar.gz"
-    sha256 "5fb1489debde515cfa2658329eda64c6d726163b03b57ef4d2e392d2e88568fa"
+    sha256 "ca64b2b9a19b826cf528269d496290a850141c48465809ffa77e48e3f570d0b6"
   end
 
   head "https://github.com/RonanXiao/workx.git", branch: "main"
