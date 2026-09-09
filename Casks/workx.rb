@@ -11,4 +11,9 @@ cask "workx" do
   depends_on macos: :monterey
 
   app "Workx.app"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Workx.app"]
+  end
 end
