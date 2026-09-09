@@ -1,6 +1,6 @@
 cask "workx" do
   version "0.1.0"
-  sha256 "1c7d6ef2cc1c498ec5348b9a5bc4a86a2cb4840dc8ca2c069948aeec072c964e"
+  sha256 "cbe1cd0dace8faf74756cf8c5aed07ea7ad09b3ce8e037f711d0f48dcd5819f6"
 
   url "https://github.com/RonanXiao/workx/releases/download/rust-v#{version}/Workx-#{version}-arm64.dmg"
   name "Workx"
