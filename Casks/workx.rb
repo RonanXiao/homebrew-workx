@@ -1,5 +1,5 @@
 cask "workx" do
-  version "0.1.2"
+  version "0.1.3"
   sha256 :no_check
 
   url "https://github.com/RonanXiao/workx/releases/download/rust-v#{version}/Workx-#{version}-arm64.dmg"
