@@ -1,15 +1,15 @@
 class Workx < Formula
   desc "Independent coding agent derived from OpenAI Codex"
   homepage "https://github.com/RonanXiao/workx"
-  version "0.1.3"
+  version "0.1.4"
   license "Apache-2.0"
 
   if Hardware::CPU.arm?
-    url "https://github.com/RonanXiao/workx/releases/download/rust-v0.1.3/workx-package-aarch64-apple-darwin.tar.gz"
-    sha256 "5e719e0b3fd58bcbdbd891501f07aba7035dcb4729d960a5ea09e4d6835b7f9c"
+    url "https://github.com/RonanXiao/workx/releases/download/rust-v0.1.4/workx-package-aarch64-apple-darwin.tar.gz"
+    sha256 "cd0005ca8d9b90758a17ccbe3aa70ea7556f48da92cacec6b5cdc0c11089333b"
   else
-    url "https://github.com/RonanXiao/workx/archive/refs/tags/rust-v0.1.3.tar.gz"
-    sha256 "1ecb03dfc894c11f516e7422df79c3531525479db5d6f298efd2d45247dc8b4a"
+    url "https://github.com/RonanXiao/workx/archive/refs/tags/rust-v0.1.4.tar.gz"
+    sha256 "def1ad007daf864f657d85f85f0bdda2d802b03a56a7b30609d8dc5e5d329131"
   end
 
   head "https://github.com/RonanXiao/workx.git", branch: "main"
