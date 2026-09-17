@@ -1,5 +1,5 @@
 cask "workx" do
-  version "0.1.5"
+  version "0.1.6"
   sha256 :no_check
 
   url "https://github.com/RonanXiao/workx/releases/download/rust-v#{version}/Workx-#{version}-arm64.dmg"
@@ -7,7 +7,6 @@ cask "workx" do
   desc "Independent coding agent derived from OpenAI Codex"
   homepage "https://github.com/RonanXiao/workx"
 
-  depends_on formula: "workx"
   depends_on macos: :monterey
 
   app "Workx.app"
